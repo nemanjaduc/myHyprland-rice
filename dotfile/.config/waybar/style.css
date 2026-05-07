@@ -11,14 +11,12 @@
 
 /*------------Window--------------------*/
 #window {
+    color: @on_surface;
     background: @surface;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin: 5px 2px;
     font-weight: normal;
-    font-style: normal;
 }
 
 /*----------Waybar Window------------*/
@@ -29,7 +27,7 @@ window#waybar {
 /*-----------Tooltip--------------*/
 tooltip {
     background: @surface;
-    border: 2px solid @tertiary;
+    border: 2px solid @primary;
     border-radius: 12px;
 }
 
@@ -86,6 +84,8 @@ tooltip label {
 #pulseaudio,
 #network,
 #battery,
+#custom-menu,
+#custom-power,
 #custom-playerctl.backward,
 #custom-playerctl.play,
 #custom-playerctl.foward {
@@ -97,7 +97,9 @@ tooltip label {
 #tray,
 #pulseaudio,
 #network,
-#battery {
+#battery,
+#custom-menu,
+#custom-power {
     color: @on_surface;
     border-radius: 8px;
     padding: 2px 8px;
@@ -170,4 +172,8 @@ tooltip label {
     padding: 2px 8px;
     margin: 5px 2px;
     font-weight: bold;
+}
+
+#custom-power {
+    color: @error;
 }

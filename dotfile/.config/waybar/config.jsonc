@@ -26,7 +26,9 @@
         "tray",
         "pulseaudio",
         "battery",
-        "network"
+        "network",
+        "custom/notification",
+        "custom/powermenu"
     ],
     /*----------Hyprland Workspace----------*/
     "hyprland/workspaces": {
@@ -160,5 +162,16 @@
         "interval": 1,
         "format-alt": "{:%A, %B %d, %Y (%R)}",
         "tooltip": false
+    },
+    /*------------Custom memu------------------*/
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "wlogout -p layer-shell &",
+        "format": "⏻"
+    },
+    "custom/powermenu": {
+        "format": " \uf011  ",
+        "tooltip": false,
+        "on-click": "$HOME/.config/rofi/powermenu/powermenu.sh"
     }
 }
