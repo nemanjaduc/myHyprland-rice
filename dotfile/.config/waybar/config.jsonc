@@ -28,7 +28,7 @@
         "battery",
         "network",
         "custom/notification",
-        "custom/powermenu"
+        "custom/power"
     ],
     /*----------Hyprland Workspace----------*/
     "hyprland/workspaces": {
@@ -39,7 +39,7 @@
             "2": "2",
             "3": "3",
             "4": "4",
-            "5": "5",
+            "5": "5"
         },
         "persistent-workspaces": {
             "*": 5
@@ -126,7 +126,8 @@
             "critical": 15,
             "good": 95,
             "warning": 30
-        }
+        },
+        "on-click": "alacritty --title btop -e sh -c  'sleep 0.1; btop'"
     },
     /*---------------Pulseaudio------------*/
     "pulseaudio": {
@@ -165,13 +166,8 @@
     },
     /*------------Custom memu------------------*/
     "custom/power": {
-        "tooltip": false,
+        "tooltip": true,
         "on-click": "wlogout -p layer-shell &",
         "format": "⏻"
-    },
-    "custom/powermenu": {
-        "format": " \uf011  ",
-        "tooltip": false,
-        "on-click": "$HOME/.config/rofi/powermenu/powermenu.sh"
     }
 }

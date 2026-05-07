@@ -12,7 +12,7 @@
 /*------------Window--------------------*/
 #window {
     color: @on_surface;
-    background: @surface;
+    background: @on_primary;
     border-radius: 8px;
     padding: 2px 8px;
     margin: 5px 2px;
@@ -21,12 +21,12 @@
 
 /*----------Waybar Window------------*/
 window#waybar {
-    background: @surface-alpha;
+    background: @on_primary-alpha;
 }
 
 /*-----------Tooltip--------------*/
 tooltip {
-    background: @surface;
+    background: @on_primary;
     border: 2px solid @primary;
     border-radius: 12px;
 }
@@ -38,7 +38,7 @@ tooltip label {
 
 /*---------Workspaces-----------------*/
 #workspaces {
-    background: @surface;
+    background: @on_primary;
     margin: 5px 5px;
     padding: 5px 5px;
     border-radius: 8px;
@@ -50,6 +50,7 @@ tooltip label {
     padding: 0px 2px;
     margin: 0px 3px;
     border-radius: 0px;
+    color: @on_surface;
 }
 
 #workspaces button.active {
@@ -89,7 +90,7 @@ tooltip label {
 #custom-playerctl.backward,
 #custom-playerctl.play,
 #custom-playerctl.foward {
-    background: @surface;
+    background: @on_primary;
     font-weight: bold;
     margin: 2px 0px;
 }
@@ -104,13 +105,13 @@ tooltip label {
     border-radius: 8px;
     padding: 2px 8px;
     margin: 5px 2px;
-    background: @surface;
+    background: @on_primary;
 
 }
 
 #clock {
     color: @on_surface;
-    background: @surface;
+    background: @on_primary;
     border-radius: 8px;
     padding: 2px 8px;
     margin: 5px 2px;
@@ -132,7 +133,7 @@ tooltip label {
 #custom-playerctl.backward,
 #custom-playerctl.play,
 #custom-playerctl.foward {
-    background: @surface;
+    background: @on_primary;
     font-size: 20px;
 }
 
@@ -166,7 +167,7 @@ tooltip label {
 }
 
 #custom-playerlabel {
-    background: @surface;
+    background: @on_primary;
     color: @on_surface;
     border-radius: 8px;
     padding: 2px 8px;
@@ -175,5 +176,7 @@ tooltip label {
 }
 
 #custom-power {
-    color: @error;
+    color: @on_surface;
+    font-size: 20px;
+    font-weight: bold;
 }
