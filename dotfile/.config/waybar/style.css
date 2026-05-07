@@ -3,7 +3,7 @@
 /*------------Global Properties-----------------*/
 * {
     border: none;
-    border-radius: 0px;
+    border-radius: 0;
     font-family: "JetBrainsMono Nerd Fonts Propo", "Noto San CJK JP", "Noto San CJK KR";
     font-size: 14px;
     min-height: 0;

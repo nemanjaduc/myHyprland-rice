@@ -18,10 +18,11 @@
     ],
     /*----------Modules Center--------------*/
     "modules-center": [
-        "hyprland/workspaces",
+        "hyprland/workspaces"
     ],
     /*----------Modules Center--------------*/
     "modules-right": [
+        "hyprland/window",
         "tray",
         "pulseaudio",
         "battery",
@@ -41,6 +42,25 @@
         "persistent-workspaces": {
             "*": 5
         }
+    },
+    /*----------Hyprland Window----------*/
+    "hyprland/window": {
+        "format": "{class}",
+        "rewrite": {
+            "librewolf": " librewolf",
+            "firefox": " firefox",
+            "zen": " zen",
+            "brave-browser": " brave",
+            "helium": " helium",
+            "vivaldi": " vivaldi",
+            "chromium": " chromium",
+            "kitty": " kitty",
+            "spotify": " spotify",
+            "code": "󰨞 code",
+            "com.ayugram.desktop": " telegram",
+            "discord": " discord",
+            "steam": " steam"
+        },
     },
     /*--------------Pacman--------------------*/
     "custom/pacman": {
@@ -90,7 +110,6 @@
     /*---------------Battery-------------*/
     "battery": {
         "format": "{icon}  {capacity}%",
-        "format-alt": "{icon} {time}",
         "format-charging": " {capacity}%",
         "format-icons": [
             "",
@@ -105,9 +124,7 @@
             "critical": 15,
             "good": 95,
             "warning": 30
-        },
-        "on-scroll-up": "~/.config/hypr/scripts/backlight.sh --inc",
-        "on-scroll-down": "~/.config/hypr/scripts/backlight.sh --dec"
+        }
     },
     /*---------------Pulseaudio------------*/
     "pulseaudio": {
@@ -128,7 +145,7 @@
         "format-disconnected": "󰖪 0% ",
         "format-ethernet": "󰈀 100% ",
         "format-linked": "{ifname} (No IP)",
-        "format-wifi": "  {signalStrength}%",
+        "format-wifi": "   {signalStrength}%",
         "tooltip-format": "Connected to {essid} {ifname} via {gwaddr}",
         "on-click": "alacritty --title AlacrittyNmtui -e sh -c  'sleep 0.1; nmtui'"
     },
