@@ -4,8 +4,12 @@ Status bar: Waybar (from [Abhra00](https://github.com/Abhra00/Matuprland))
 Window Switcher: Rofi (from [deridray](https://github.com/deridray/dotfiles))  
 Hyprlock (from [MrVivekRajan](https://github.com/MrVivekRajan/Hyprlock-Styles))
 
-#Unikey & Bamboo for typing Vietnamese  
-```sudo pacman -S fcitx5 fcitx5-bamboo fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-unikey```  
+## Unikey & Bamboo for typing Vietnamese  
+```
+sudo pacman -S fcitx5 fcitx5-bamboo fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-unikey
+```  
 
-#Zalo  
-```git clone https://github.com/ducseul/zalo-linux-unofficial.git && cd zalo-linux-unofficial && bash install.sh```  
+## Zalo  
+```
+git clone https://github.com/ducseul/zalo-linux-unofficial.git && cd zalo-linux-unofficial && bash install.sh
+```  
